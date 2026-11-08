@@ -364,11 +364,12 @@
         <div class="article-title">L'émergence des data centers orbitaux</div>
         <div class="article-desc">Microsoft et Amazon explorent l'hébergement de serveurs en orbite basse pour bénéficier du refroidissement passif.</div>
       </div>
-      <div class="article-card">
+      <div class="article-card" onclick="openModal('modalArticle2')" style="cursor:pointer;">
         <div class="article-num">Article 02</div>
-        <div class="article-source">Le Monde Informatique — 2024</div>
-        <div class="article-title">Impact environnemental : les data centers spatiaux sont-ils vraiment plus verts ?</div>
-        <div class="article-desc">Le lancement de fusées émet des gaz à effet de serre. Le débris spatial est une autre menace.</div>
+        <div class="article-source">The Conversation — 22/07/2026</div>
+        <div class="article-title">Centres de données dans l'espace : ni écologiques, ni économes</div>
+        <div class="article-desc">Des chercheurs expliquent pourquoi envoyer les data centers en orbite crée de nouveaux problèmes, notamment pour évacuer la chaleur.</div>
+        <div class="sp-card-cta">Voir le détail →</div>
       </div>
       <div class="article-card">
         <div class="article-num">Article 03</div>
@@ -388,6 +389,31 @@
         <div class="article-title">Data centers dans l'espace : peu de voisins, pas de permis de construire, de l'énergie solaire</div>
         <div class="article-desc">Pourquoi l'espace est présenté comme un lieu idéal pour accueillir les data centers.</div>
         <div class="sp-card-cta">Voir le détail →</div>
+      </div>
+    </div>
+
+    <!-- Modale article 02 -->
+    <div class="modal" id="modalArticle2">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Article 02 — The Conversation</h3>
+          <button type="button" class="modal-close" onclick="closeModal('modalArticle2')">✕</button>
+        </div>
+        <div class="modal-body">
+          <h4>1. Titre de l'article</h4>
+          <p>« Centres de données dans l'espace : ni écologiques, ni économes »</p>
+          <h4>2. Source</h4>
+          <p>The Conversation — média d'analyse rédigé par des chercheurs et des universitaires.</p>
+          <h4>3. Auteurs</h4>
+          <p>François Graner, directeur de recherche au CNRS (Université Paris Cité), et Carine Douarche, physicienne (Université Paris-Saclay).</p>
+          <h4>4. Date de publication</h4>
+          <p>22 juillet 2026</p>
+          <h4>5. Explication</h4>
+          <p>Les auteurs montrent que déplacer les data centers dans l'espace ne règle pas leur impact écologique et crée de nouveaux problèmes. Le principal est la chaleur : pour l'évacuer en orbite, il faudrait des infrastructures spéciales et de grande taille. L'article replace aussi cette idée, portée par de grandes entreprises du numérique, dans son contexte : elle vise à éviter les conflits d'usage rencontrés sur Terre, par exemple autour de l'eau. Cet article nourrit ma problématique, car il invite à se demander si une informatique « hors-sol » est réellement plus responsable. [À compléter : 2 ou 3 idées précises tirées de ta lecture de l'article]</p>
+          <h4>6. Lien vers l'article</h4>
+          <p><a href="https://theconversation.com/centres-de-donnees-dans-lespace-ni-ecologiques-ni-economes-286074" class="btn-primary" target="_blank" rel="noopener noreferrer">Lire l'article sur The Conversation ↗</a></p>
+        </div>
+        <div class="modal-footer"><button type="button" onclick="closeModal('modalArticle2')">← Retour</button></div>
       </div>
     </div>
 
