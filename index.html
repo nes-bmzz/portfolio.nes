@@ -170,7 +170,7 @@
       </div>
       <!-- Carte projet 3 -->
       <div class="sp-card" onclick="openModal('modalSituation3')">
-        <div class="sp-card-cover" style="display:flex;align-items:center;justify-content:center;font-size:4rem;">🔐</div>
+        <div class="sp-card-cover"><img src="images/paiement.jpg" alt="Paiement en ligne sécurisé" style="width:100%;height:100%;object-fit:cover;"></div>
         <div class="sp-card-body">
           <span class="sp-tag stage">Perso · En cours</span>
           <h3 class="sp-card-title">Projet 3 — Paiement en ligne sécurisé</h3>
@@ -339,7 +339,7 @@
     <div class="modal" id="certOC">
       <div class="modal-content">
         <div class="modal-header"><h3>🎓 OpenClassrooms</h3><button onclick="closeModal('certOC')">✕</button></div>
-        <div class="modal-body"><p>Parcours de formation en cours sur la plateforme OpenClassrooms.</p></div>
+        <div class="modal-body"><p>Parcours de formation en cours sur la plateforme OpenClassrooms. [Intitulé et contenu à compléter]</p></div>
       </div>
     </div>
   </section>
@@ -358,12 +358,11 @@
       <strong>Contexte :</strong> Face à l'explosion des besoins en puissance de calcul, des acteurs explorent l'idée de délocaliser des data centers dans l'espace. Un data center spatial est un satellite équipé de processeurs, GPU ou TPUs permettant de réaliser du calcul intensif ou du stockage directement en orbite. L’objectif est de déporter une partie de la charge informatique terrestre vers l’espace. 
     </div>
     <div class="articles-grid">
-      <div class="article-card" onclick="openModal('modalArticle5')" style="cursor:pointer;">
+      <div class="article-card">
         <div class="article-num">Article 01</div>
-        <div class="article-source">Le Monde — 28/09/2026</div>
-        <div class="article-title">Data centers dans l'espace : peu de voisins, pas de permis de construire, de l'énergie solaire</div>
-        <div class="article-desc">Pourquoi l'espace est présenté comme un lieu idéal pour accueillir les data centers.</div>
-        <div class="sp-card-cta">Voir le détail →</div>
+        <div class="article-source">The Verge / Space.com — 2024</div>
+        <div class="article-title">L'émergence des data centers orbitaux</div>
+        <div class="article-desc">Microsoft et Amazon explorent l'hébergement de serveurs en orbite basse pour bénéficier du refroidissement passif.</div>
       </div>
       <div class="article-card">
         <div class="article-num">Article 02</div>
@@ -383,7 +382,14 @@
         <div class="article-title">Impact social et gouvernance mondiale</div>
         <div class="article-desc">L'ONU s'inquiète que l'espace devienne un terrain d'inégalités numériques accrues.</div>
       </div>
-     
+      <div class="article-card" onclick="openModal('modalArticle5')" style="cursor:pointer;">
+        <div class="article-num">Article 05</div>
+        <div class="article-source">Le Monde — 28/09/2026</div>
+        <div class="article-title">Data centers dans l'espace : peu de voisins, pas de permis de construire, de l'énergie solaire</div>
+        <div class="article-desc">Pourquoi l'espace est présenté comme un lieu idéal pour accueillir les data centers.</div>
+        <div class="sp-card-cta">Voir le détail →</div>
+      </div>
+    </div>
 
     <!-- Modale article 05 -->
     <div class="modal" id="modalArticle5">
