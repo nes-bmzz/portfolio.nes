@@ -168,9 +168,15 @@
           <div class="sp-card-cta">Voir le détail →</div>
         </div>
       </div>
-      <div class="sp-placeholder">
-        <div class="sp-placeholder-icon">＋</div>
-        <div class="sp-placeholder-text">Situation professionnelle 3<br><small>2e année — à venir</small></div>
+      <!-- Carte projet 3 -->
+      <div class="sp-card" onclick="openModal('modalSituation3')">
+        <div class="sp-card-cover" style="display:flex;align-items:center;justify-content:center;font-size:4rem;">🔐</div>
+        <div class="sp-card-body">
+          <span class="sp-tag stage">Perso · En cours</span>
+          <h3 class="sp-card-title">Projet 3 — Paiement en ligne sécurisé</h3>
+          <p class="sp-card-desc">Site de réservation avec paiement par carte pour une prestation de service, conçu pour protéger les données bancaires (carte, IBAN) des clients.</p>
+          <div class="sp-card-cta">Voir le détail →</div>
+        </div>
       </div>
       <div class="sp-placeholder">
         <div class="sp-placeholder-icon">＋</div>
@@ -245,6 +251,29 @@
         <div class="modal-footer"><button type="button" onclick="closeModal('modalSituation2')">← Retour</button></div>
       </div>
     </div>
+    <!-- Modale projet 3 -->
+    <div class="modal" id="modalSituation3">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Projet 3 — Paiement en ligne sécurisé</h3>
+          <button type="button" class="modal-close" onclick="closeModal('modalSituation3')">✕</button>
+        </div>
+        <div class="modal-body">
+          <h4>1. Contexte & besoin</h4>
+          <p>Une amie vend une prestation de service et se fait aujourd'hui payer en main propre, ce qui complique le suivi des réservations et oblige les clients à se déplacer avec de l'argent liquide. Mon objectif est de développer un site permettant de réserver et de payer par carte bancaire en ligne, comme sur un site marchand. Le projet est centré sur la sécurité des transactions : le site ne doit jamais manipuler ni stocker de numéro de carte ou d'IBAN, afin de limiter les risques de vol de données bancaires.</p>
+          <h4>2. Environnement technologique</h4>
+          <p>Langages : JavaScript, HTML5, CSS3. Back-end : Node.js, Express. Paiement : Stripe Checkout (mode test), webhooks. Sécurité : Helmet (en-têtes HTTP, politique de sécurité du contenu), limitation du nombre de requêtes, variables d'environnement pour les clés secrètes, validation des données reçues. Outils : VS Code, Git / GitHub, Stripe CLI. Système : Windows.</p>
+          <h4>3. Réalisations détaillées</h4>
+          <p>Le projet est en cours de réalisation. Étapes déjà réalisées : analyse des risques (vol de carte ou d'IBAN, modification du prix par le client, fausse confirmation de paiement), choix de Stripe Checkout pour que la saisie bancaire se fasse sur la page sécurisée du prestataire, développement du serveur (prix définis côté serveur, création de la session de paiement, vérification du statut auprès de Stripe, webhook dont la signature est contrôlée), création des pages (choix de la prestation, confirmation, annulation) et tests avec une carte de test. Prochaines étapes : enregistrement des commandes en base de données, e-mails de confirmation, mentions légales et CGV, puis mise en ligne en HTTPS.</p>
+          <h4>4. Problèmes rencontrés & solutions</h4>
+          <p>La principale difficulté était d'encaisser des paiements sans jamais gérer moi-même de données bancaires. J'ai résolu ce point en déléguant la saisie de la carte à Stripe, dont la page de paiement est hébergée par le prestataire. J'ai aussi appris à ne pas faire confiance au navigateur : le prix est fixé côté serveur et un paiement n'est validé que par la confirmation signée envoyée par Stripe, et non parce que le client arrive sur une page « merci ».</p>
+          <h4>5. Bilan & conclusion</h4>
+          <p>Bilan provisoire : ce projet me permet de comprendre comment sécuriser un paiement en ligne et de mettre en pratique mes connaissances en cybersécurité sur un cas concret. [À compléter à la fin du projet]</p>
+        </div>
+        <div class="modal-footer"><button type="button" onclick="closeModal('modalSituation3')">← Retour</button></div>
+      </div>
+    </div>
+
   </section>
 
   <hr>
@@ -263,11 +292,11 @@
         <div class="cert-footer"><span class="cert-badge en-cours">En cours</span><span class="cert-view-hint">Voir la certification →</span></div>
       </div>
       <!-- Certif 2 -->
-      <div class="cert-card" onclick="openModal('certAWS')">
-        <div class="cert-emoji">☁️</div>
-        <div class="cert-titre">AWS Amazon Web Services — Cloud Practitioner</div>
-        <div class="cert-organisme">Amazon Web Services</div>
-        <p class="cert-description">Fondamentaux AWS Amazon Web Services : services, sécurité, architecture et facturation. Première certification officielle Amazon.</p>
+      <div class="cert-card" onclick="openModal('certANS')">
+        <div class="cert-emoji">🏥</div>
+        <div class="cert-titre">Cybersécurité en santé</div>
+        <div class="cert-organisme">ANS — Agence du Numérique en Santé</div>
+        <p class="cert-description">Sensibilisation à la cybersécurité dans le secteur de la santé : protection des données de santé, risques numériques et bonnes pratiques.</p>
         <div class="cert-footer"><span class="cert-badge en-cours">En cours</span><span class="cert-view-hint">Voir la certification →</span></div>
       </div>
       <!-- Certif 3 -->
@@ -279,11 +308,11 @@
         <div class="cert-footer"><span class="cert-badge en-cours">En cours</span><span class="cert-view-hint">Voir la certification →</span></div>
       </div>
       <!-- Certif 4 -->
-      <div class="cert-card" onclick="openModal('certOSINT')">
-        <div class="cert-emoji">🔍</div>
-        <div class="cert-titre">OSINT — Renseignement en sources ouvertes</div>
-        <div class="cert-organisme">Certification pratique OSINT</div>
-        <p class="cert-description">Techniques de collecte et d'analyse d'informations publiques : recherche avancée, investigation numérique et veille stratégique.</p>
+      <div class="cert-card" onclick="openModal('certOC')">
+        <div class="cert-emoji">🎓</div>
+        <div class="cert-titre">OpenClassrooms — [intitulé du cours à préciser]</div>
+        <div class="cert-organisme">OpenClassrooms</div>
+        <p class="cert-description">Parcours de formation en ligne suivi sur OpenClassrooms. [Courte description à compléter]</p>
         <div class="cert-footer"><span class="cert-badge en-cours">En cours</span><span class="cert-view-hint">Voir la certification →</span></div>
       </div>
     </div>
@@ -292,13 +321,13 @@
     <div class="modal" id="certRGPD">
       <div class="modal-content">
         <div class="modal-header"><h3>🔒 RGPD & Protection des données</h3><button onclick="closeModal('certRGPD')">✕</button></div>
-        <div class="modal-body"><p>Cette certification couvre les bases du RGPD obtenue via la plateforme CNIL.</p></div>
+        <div class="modal-body"><p>Formation en cours sur les bases du RGPD, suivie via la plateforme de la CNIL.</p></div>
       </div>
     </div>
-    <div class="modal" id="certAWS">
+    <div class="modal" id="certANS">
       <div class="modal-content">
-        <div class="modal-header"><h3>☁️ AWS Cloud Practitioner</h3><button onclick="closeModal('certAWS')">✕</button></div>
-        <div class="modal-body"><p>Découverte des principaux services AWS, architecture et sécurité.</p></div>
+        <div class="modal-header"><h3>🏥 Cybersécurité en santé — ANS</h3><button onclick="closeModal('certANS')">✕</button></div>
+        <div class="modal-body"><p>Formation en cours proposée par l'Agence du Numérique en Santé, consacrée à la cybersécurité dans le secteur de la santé et à la protection des données de santé.</p></div>
       </div>
     </div>
     <div class="modal" id="certSec">
@@ -307,10 +336,10 @@
         <div class="modal-body"><p>MOOC proposé par l'ANSSI, couvrant les risques numériques et la sécurité.</p></div>
       </div>
     </div>
-    <div class="modal" id="certOSINT">
+    <div class="modal" id="certOC">
       <div class="modal-content">
-        <div class="modal-header"><h3>🔍 OSINT</h3><button onclick="closeModal('certOSINT')">✕</button></div>
-        <div class="modal-body"><p>Formation pratique aux techniques d'investigation en sources ouvertes.</p></div>
+        <div class="modal-header"><h3>🎓 OpenClassrooms</h3><button onclick="closeModal('certOC')">✕</button></div>
+        <div class="modal-body"><p>Parcours de formation en cours sur la plateforme OpenClassrooms.</p></div>
       </div>
     </div>
   </section>
@@ -329,12 +358,12 @@
       <strong>Contexte :</strong> Face à l'explosion des besoins en puissance de calcul, des acteurs explorent l'idée de délocaliser des data centers dans l'espace. Un data center spatial est un satellite équipé de processeurs, GPU ou TPUs permettant de réaliser du calcul intensif ou du stockage directement en orbite. L’objectif est de déporter une partie de la charge informatique terrestre vers l’espace. 
     </div>
     <div class="articles-grid">
-      <div class="article-card">
+      <div class="article-card" onclick="openModal('modalArticle5')" style="cursor:pointer;">
         <div class="article-num">Article 01</div>
-        <div class="article-source">The Verge / Space.com — 2024</div>
-        <div class="article-title">L'émergence des data centers orbitaux</div>
-        <div class="article-desc">Microsoft et Amazon explorent l'hébergement de serveurs en orbite basse pour bénéficier du refroidissement passif.</div>
-      </div>
+        <div class="article-source">Le Monde — 28/09/2026</div>
+        <div class="article-title">Data centers dans l'espace : peu de voisins, pas de permis de construire, de l'énergie solaire</div>
+        <div class="article-desc">Pourquoi l'espace est présenté comme un lieu idéal pour accueillir les data centers.</div>
+        <div class="sp-card-cta">Voir le détail →</div>
       <div class="article-card">
         <div class="article-num">Article 02</div>
         <div class="article-source">Le Monde Informatique — 2024</div>
@@ -353,14 +382,7 @@
         <div class="article-title">Impact social et gouvernance mondiale</div>
         <div class="article-desc">L'ONU s'inquiète que l'espace devienne un terrain d'inégalités numériques accrues.</div>
       </div>
-      <div class="article-card" onclick="openModal('modalArticle5')" style="cursor:pointer;">
-        <div class="article-num">Article 05</div>
-        <div class="article-source">Le Monde — 28/09/2026</div>
-        <div class="article-title">Data centers dans l'espace : peu de voisins, pas de permis de construire, de l'énergie solaire</div>
-        <div class="article-desc">Pourquoi l'espace est présenté comme un lieu idéal pour accueillir les data centers.</div>
-        <div class="sp-card-cta">Voir le détail →</div>
-      </div>
-    </div>
+     
 
     <!-- Modale article 05 -->
     <div class="modal" id="modalArticle5">
