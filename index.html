@@ -35,6 +35,7 @@
     <div class="hero-ctas">
       <a href="#situations" class="btn-primary">Voir mes projets →</a>
       <a href="#contact" class="btn-secondary">Me contacter</a>
+      <a href="CV.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">📄 Mon CV</a>
     </div>
     <div class="hero-badges">
       <div class="hero-badge">🎓 <span>BTS SIO SLAM</span> — 2ème années</div>
@@ -75,7 +76,7 @@
       <div class="timeline-item">
         <div class="timeline-card">
           <div class="timeline-date">2022 — 2025</div>
-          <div class="timeline-school">Baccalauréat — Spécialité RHC</div>
+          <div class="timeline-school">Baccalauréat — Spécialité Ressources humaines et communication</div>
           <div class="timeline-desc">Lycée La Pléiade · Pont de Chéruy — Mention assez bien</div>
           <div class="timeline-desc">déléguée suppléante</div>
           <div class="timeline-desc">Obtention certificat psc1</div>
@@ -122,7 +123,15 @@
         <div class="comp-tech-card"><div class="comp-tech-icon">🐧</div><div class="comp-tech-name">Linux / Fedora</div></div>
       </div>
     </div>
-    <a href="Grille_de_competence_Ines.pdf" class="comp-excel-link" target="_blank">
+    <a href="CV.pdf" class="comp-excel-link" target="_blank" rel="noopener noreferrer">
+      <div class="comp-excel-icon">📄</div>
+      <div class="comp-excel-text">
+        <div class="title">Mon CV</div>
+        <div class="sub">Document PDF — Parcours, expériences et compétences</div>
+      </div>
+      <div class="comp-excel-arrow">↗</div>
+    </a>
+    <a href="Grille_de_competence.pdf" class="comp-excel-link" target="_blank" rel="noopener noreferrer">
       <div class="comp-excel-icon">📊</div>
       <div class="comp-excel-text">
         <div class="title">Grille de compétences complète (BTS SIO)</div>
@@ -344,6 +353,39 @@
         <div class="article-title">Impact social et gouvernance mondiale</div>
         <div class="article-desc">L'ONU s'inquiète que l'espace devienne un terrain d'inégalités numériques accrues.</div>
       </div>
+      <div class="article-card" onclick="openModal('modalArticle5')" style="cursor:pointer;">
+        <div class="article-num">Article 05</div>
+        <div class="article-source">Le Monde — 28/09/2026</div>
+        <div class="article-title">Data centers dans l'espace : peu de voisins, pas de permis de construire, de l'énergie solaire</div>
+        <div class="article-desc">Pourquoi l'espace est présenté comme un lieu idéal pour accueillir les data centers.</div>
+        <div class="sp-card-cta">Voir le détail →</div>
+      </div>
+    </div>
+
+    <!-- Modale article 05 -->
+    <div class="modal" id="modalArticle5">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Article 05 — Le Monde</h3>
+          <button type="button" class="modal-close" onclick="closeModal('modalArticle5')">✕</button>
+        </div>
+        <div class="modal-body">
+          <h4>1. Titre de l'article</h4>
+          <p>« En théorie, l'espace est parfait pour accueillir les data centers : peu de voisins, pas de permis de construire, de l'énergie solaire »</p>
+          <h4>2. Source</h4>
+          <p>Le Monde — rubrique Économie.</p>
+          <h4>3. Auteur</h4>
+          <!-- À COMPLÉTER : nom du ou des journalistes (visible en haut de l'article sur lemonde.fr) -->
+          <p>[À compléter : nom du journaliste]</p>
+          <h4>4. Date de publication</h4>
+          <p>28 septembre 2026</p>
+          <h4>5. Explication</h4>
+          <p>Cet article explique pourquoi l'espace attire les entreprises qui construisent des data centers : très peu de voisins pour s'opposer aux projets, pas de permis de construire à obtenir et une énergie solaire disponible en continu. Il se rattache directement à ma problématique, car il met en avant les atouts de cette « informatique hors-sol » tout en invitant à se demander si elle est vraiment responsable sur le plan environnemental, éthique et social. [À compléter : 2 ou 3 idées précises tirées de ta lecture de l'article]</p>
+          <h4>6. Lien vers l'article</h4>
+          <p><a href="https://www.lemonde.fr/economie/article/2026/09/28/en-theorie-l-espace-est-parfait-pour-accueillir-les-data-centers-peu-de-voisins-pas-de-permis-de-construire-de-l-energie-solaire_6785029_3234.html" class="btn-primary" target="_blank" rel="noopener noreferrer">Lire l'article sur Le Monde ↗</a></p>
+        </div>
+        <div class="modal-footer"><button type="button" onclick="closeModal('modalArticle5')">← Retour</button></div>
+      </div>
     </div>
   </section>
 
@@ -360,6 +402,8 @@
           <a href="mailto:ines.boumaiza04@gmail.com" class="contact-link mail"><span class="cl-icon">@</span>ines.boumaiza04@gmail.com</a>
           <a href="https://www.linkedin.com/in/ines-bouma%C3%AFza-90a57338a/" class="contact-link li" target="_blank"><span class="cl-icon">in</span>LinkedIn</a>
           <a href="https://github.com/ines-bmzz" class="contact-link git" target="_blank"><span class="cl-icon">gh</span>GitHub</a>
+          <a href="CV.pdf" class="contact-link cv" target="_blank" rel="noopener noreferrer"><span class="cl-icon">📄</span>Mon CV</a>
+          <a href="Grille_de_competence.pdf" class="contact-link grille" target="_blank" rel="noopener noreferrer"><span class="cl-icon">📊</span>Grille de compétences</a>
         </div>
       </div>
       <div>
