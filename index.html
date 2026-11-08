@@ -358,11 +358,12 @@
       <strong>Contexte :</strong> Face à l'explosion des besoins en puissance de calcul, des acteurs explorent l'idée de délocaliser des data centers dans l'espace. Un data center spatial est un satellite équipé de processeurs, GPU ou TPUs permettant de réaliser du calcul intensif ou du stockage directement en orbite. L’objectif est de déporter une partie de la charge informatique terrestre vers l’espace. 
     </div>
     <div class="articles-grid">
-      <div class="article-card">
+      <div class="article-card" onclick="openModal('modalArticle1')" style="cursor:pointer;">
         <div class="article-num">Article 01</div>
-        <div class="article-source">The Verge / Space.com — 2024</div>
-        <div class="article-title">L'émergence des data centers orbitaux</div>
-        <div class="article-desc">Microsoft et Amazon explorent l'hébergement de serveurs en orbite basse pour bénéficier du refroidissement passif.</div>
+        <div class="article-source">Le Monde — 28/09/2026</div>
+        <div class="article-title">Data centers dans l'espace : peu de voisins, pas de permis de construire, de l'énergie solaire</div>
+        <div class="article-desc">Pourquoi l'espace est présenté comme un lieu idéal pour accueillir les data centers.</div>
+        <div class="sp-card-cta">Voir le détail →</div>
       </div>
       <div class="article-card" onclick="openModal('modalArticle2')" style="cursor:pointer;">
         <div class="article-num">Article 02</div>
@@ -371,26 +372,21 @@
         <div class="article-desc">Des chercheurs expliquent pourquoi envoyer les data centers en orbite crée de nouveaux problèmes, notamment pour évacuer la chaleur.</div>
         <div class="sp-card-cta">Voir le détail →</div>
       </div>
-      <div class="article-card">
+      <div class="article-card" onclick="openModal('modalArticle3')" style="cursor:pointer;">
         <div class="article-num">Article 03</div>
-        <div class="article-source">Wired — 2025</div>
-        <div class="article-title">Enjeux éthiques et souveraineté numérique</div>
-        <div class="article-desc">Héberger hors sol soulève des questions de souveraineté juridique et de monopole privé.</div>
-      </div>
-      <div class="article-card">
-        <div class="article-num">Article 04</div>
-        <div class="article-source">Numerama — 2025</div>
-        <div class="article-title">Impact social et gouvernance mondiale</div>
-        <div class="article-desc">L'ONU s'inquiète que l'espace devienne un terrain d'inégalités numériques accrues.</div>
-      </div>
-      <div class="article-card" onclick="openModal('modalArticle5')" style="cursor:pointer;">
-        <div class="article-num">Article 05</div>
-        <div class="article-source">Le Monde — 28/09/2026</div>
-        <div class="article-title">Data centers dans l'espace : peu de voisins, pas de permis de construire, de l'énergie solaire</div>
-        <div class="article-desc">Pourquoi l'espace est présenté comme un lieu idéal pour accueillir les data centers.</div>
+        <div class="article-source">The Conversation</div>
+        <div class="article-title">Pourrait-on faire fonctionner des data centers dans l'espace ?</div>
+        <div class="article-desc">Définition, but et problématique des data centers spatiaux, testés par des entreprises depuis 2025.</div>
         <div class="sp-card-cta">Voir le détail →</div>
       </div>
-    </div>
+      <div class="article-card" onclick="openModal('modalArticle4')" style="cursor:pointer;">
+        <div class="article-num">Article 04</div>
+        <div class="article-source">Les Numériques</div>
+        <div class="article-title">Google envoie un data center IA dans l'espace avec SpaceX, et il consomme autant qu'un sèche-cheveux</div>
+        <div class="article-desc">Un satellite de test de Google pour vérifier si des puces d'IA résistent aux conditions de l'orbite.</div>
+        <div class="sp-card-cta">Voir le détail →</div>
+      </div>
+</div>
 
     <!-- Modale article 02 -->
     <div class="modal" id="modalArticle2">
@@ -417,12 +413,65 @@
       </div>
     </div>
 
-    <!-- Modale article 05 -->
-    <div class="modal" id="modalArticle5">
+    <!-- Modale article 03 -->
+    <div class="modal" id="modalArticle3">
       <div class="modal-content">
         <div class="modal-header">
-          <h3 class="modal-title">Article 05 — Le Monde</h3>
-          <button type="button" class="modal-close" onclick="closeModal('modalArticle5')">✕</button>
+          <h3 class="modal-title">Article 03 — The Conversation</h3>
+          <button type="button" class="modal-close" onclick="closeModal('modalArticle3')">✕</button>
+        </div>
+        <div class="modal-body">
+          <h4>1. Problématique</h4>
+          <p>« Les data centers spatiaux : une révolution numérique face à ses enjeux environnementaux, éthiques et sociaux — vers une informatique hors-sol responsable ? »</p>
+          <h4>2. Définition</h4>
+          <p>Un data center spatial est un satellite équipé de processeurs, GPU ou TPUs permettant de réaliser du calcul intensif ou du stockage directement en orbite. L'objectif est de déporter une partie de la charge informatique terrestre vers l'espace.</p>
+          <h4>3. But & problématique</h4>
+          <p>Les data centers dans l'espace sont des centres de calcul installés sur des satellites en orbite, déjà testés par des entreprises comme SpaceX, Starcloud et Kepler Communications, avec des premiers prototypes opérationnels depuis 2025.</p>
+          <p>Le problème de départ est le réchauffement climatique, que l'informatique aggrave sur Terre. Elon Musk annonce vouloir installer des data centers dans l'espace, ce qui pourrait polluer la Terre et avoir aussi un impact sur l'espace lui-même.</p>
+          <h4>4. Source</h4>
+          <p>The Conversation — « Pourrait-on faire fonctionner des data centers dans l'espace ? »</p>
+          <!-- À COMPLÉTER : auteur(s) et date de publication, visibles en haut de l'article -->
+          <p>Auteur : [À compléter] · Date : [À compléter]</p>
+          <h4>5. Lien vers l'article</h4>
+          <p><a href="https://theconversation.com/pourrait-on-faire-fonctionner-des-data-centers-dans-lespace-274582" class="btn-primary" target="_blank" rel="noopener noreferrer">Lire l'article sur The Conversation ↗</a></p>
+        </div>
+        <div class="modal-footer"><button type="button" onclick="closeModal('modalArticle3')">← Retour</button></div>
+      </div>
+    </div>
+
+    <!-- Modale article 04 -->
+    <div class="modal" id="modalArticle4">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Article 04 — Les Numériques</h3>
+          <button type="button" class="modal-close" onclick="closeModal('modalArticle4')">✕</button>
+        </div>
+        <div class="modal-body">
+          <h4>1. Titre de l'article</h4>
+          <p>« Google envoie un data center IA dans l'espace avec SpaceX, et il consomme autant qu'un sèche-cheveux »</p>
+          <h4>2. Source</h4>
+          <p>Les Numériques — rubrique Spatial.</p>
+          <h4>3. Auteur</h4>
+          <!-- À COMPLÉTER : nom du journaliste, visible en haut de l'article -->
+          <p>[À compléter : nom du journaliste]</p>
+          <h4>4. Date de publication</h4>
+          <!-- À COMPLÉTER : date visible en haut de l'article -->
+          <p>[À compléter : date de publication]</p>
+          <h4>5. Explication</h4>
+          <p>Google teste l'idée de data centers en orbite avec un prototype : un petit satellite, lancé avec SpaceX, qui embarque quelques puces d'IA (des TPU) alimentées par des panneaux solaires. Son but n'est pas encore de remplacer un data center terrestre, mais de vérifier que ces puces supportent les conditions de l'espace. Le titre insiste sur un point : la puissance électrique du satellite est comparable à celle d'un sèche-cheveux, très loin de celle d'un vrai data center. Cet article relie ma problématique à un projet concret porté par une grande entreprise, et montre l'écart entre l'annonce et la réalité actuelle. [À compléter : 2 ou 3 idées précises tirées de ta lecture de l'article]</p>
+          <h4>6. Lien vers l'article</h4>
+          <p><a href="https://www.lesnumeriques.com/spatial/google-envoie-un-data-center-ia-dans-l-espace-avec-spacex-et-il-consomme-autant-qu-un-seche-cheveux-n262305.html" class="btn-primary" target="_blank" rel="noopener noreferrer">Lire l'article sur Les Numériques ↗</a></p>
+        </div>
+        <div class="modal-footer"><button type="button" onclick="closeModal('modalArticle4')">← Retour</button></div>
+      </div>
+    </div>
+
+    <!-- Modale article 01 -->
+    <div class="modal" id="modalArticle1">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Article 01 — Le Monde</h3>
+          <button type="button" class="modal-close" onclick="closeModal('modalArticle1')">✕</button>
         </div>
         <div class="modal-body">
           <h4>1. Titre de l'article</h4>
@@ -439,7 +488,7 @@
           <h4>6. Lien vers l'article</h4>
           <p><a href="https://www.lemonde.fr/economie/article/2026/09/28/en-theorie-l-espace-est-parfait-pour-accueillir-les-data-centers-peu-de-voisins-pas-de-permis-de-construire-de-l-energie-solaire_6785029_3234.html" class="btn-primary" target="_blank" rel="noopener noreferrer">Lire l'article sur Le Monde ↗</a></p>
         </div>
-        <div class="modal-footer"><button type="button" onclick="closeModal('modalArticle5')">← Retour</button></div>
+        <div class="modal-footer"><button type="button" onclick="closeModal('modalArticle1')">← Retour</button></div>
       </div>
     </div>
   </section>
